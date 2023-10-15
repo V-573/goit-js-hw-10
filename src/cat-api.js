@@ -30,7 +30,8 @@ export async function fetchCatByBreed(breedId) {
   try {
     const response = await axios.get(apiUrl);
 
-    if (!response.data || response.data.length === 0) {
+      if (!response.data || response.data.length === 0) {
+        
       console.error('Datos del gato no encontrados o estructura incorrecta.');
       throw new Error('Datos del gato no encontrados o estructura incorrecta.');
     }
@@ -40,6 +41,7 @@ export async function fetchCatByBreed(breedId) {
     // Devolver el primer elemento del array
     return response.data[0];
   } catch (error) {
+    
     console.error(`Error al obtener información del gato: ${error.message}`);
     throw new Error(`Error al obtener información del gato: ${error.message}`);
   }

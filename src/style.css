@@ -1,0 +1,19 @@
+/* Estilo para el cargador */
+p.loader {
+  display: none;
+}
+
+p.error {
+  display: none;
+  color: red;
+}
+
+/* Estilo para el selector de razas */
+select.breed-select {
+  display: block; /* Ajusta según sea necesario */
+}
+
+/* Estilo para el div de información del gato */
+div.cat-info {
+  display: block; /* Ajusta según sea necesario */
+}
