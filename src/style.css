@@ -1,7 +1,9 @@
 /* Estilo para el cargador */
-p.loader {
+/* p.loader {
   display: none;
-}
+} */
+
+
 
 p.error {
   display: none;
@@ -13,7 +15,26 @@ select.breed-select {
   display: block; /* Ajusta según sea necesario */
 }
 
-/* Estilo para el div de información del gato */
-div.cat-info {
-  display: block; /* Ajusta según sea necesario */
+/* Estilo para el div de información0 del gato */
+
+
+.loader {
+
+  width: 480px;
+  height: 480px;
+  border: 5px dotted #FFF;
+  border-radius: 50%;
+  display:none;
+  position: relative;
+  box-sizing: border-box;
+  animation: rotation 2s linear infinite;
 }
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+} 
